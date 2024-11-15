@@ -1,0 +1,30 @@
+body{
+    font-size: 16px;
+}
+@media (max-width: 480px){
+    body{
+        font-size: 20px;
+        background-color: blue;
+    }
+
+
+}
+@media (max-width:760px){
+    body{
+        font-size: 30px;
+        background-color: green;
+
+    }
+}
+@media (min-width:1024px){
+    body{
+        font-size: 40px;
+        background-color: red;
+    }
+}
+@media (min-width:1280px){
+    body{
+        font-size: 50px;
+        background-color:blueviolet;
+    }
+}

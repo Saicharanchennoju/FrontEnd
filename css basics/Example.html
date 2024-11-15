@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+    .grid-container-1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px;
+        gap: 10px;
+    }
+    .item-1{
+        background-color: blueviolet;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 100px;
+        gap: 20px;
+    }
+    .item-2{
+        background-color: skyblue;
+        color: blue;
+        padding: 10px;
+        text-align: end;
+    }
+    .grid-container-3{
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        gap: 15px;
+    }
+    .item-3{
+        background-color: seagreen;
+        color: red;
+        padding: 13px;
+        text-align: start
+    }
+    .grid-container-4{
+        display: grid;
+        grid-template-columns: minmax(100px,1fr);
+        grid-template-rows: minmax();
+        gap: 20px;
+    }
+    .item-4{
+        background-color: orchid;
+        color:grey;
+        padding: 5px;
+        text-align: justify;
+    }
+    .grid-container-2{
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+        gap: 30px;
+    }
+    .item-5{
+        background-color: wheat;
+        color: pink;
+        padding: 10px;
+        text-align: inherit;
+    }
+</style>
+<Link rel="stylesheet" href="Example.css"></Link>
+<body>
+        <div class="grid-container">
+          <div class="item-1">1.Sai</div>
+        </div>
+        <hr>
+
+        <div class="grid-container-2">
+            <div class="item-2">2.Sai</div>
+        </div>
+        <hr>
+        <div class="grid-container-3">
+            <div class="item-3">3.Sai</div>
+        </div>
+        <hr>
+       <div class="grid-container-4">
+        <div class="item-4">4.Sai</div>
+       </div>
+       <hr>
+       <div class="grid-container-5">
+        <div class="item-5">5.Sai</div>
+       </div>
+</body>
+</html>
