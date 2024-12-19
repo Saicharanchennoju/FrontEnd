@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Username">Saicharan</h1>
+    <script>
+        // Function to fetch GitHub user data
+function getGitHubUser(username) {
+  const url = `https://api.github.com/users/${username}`;
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`User not found: ${response.status}`);
+      }
+      return response.json(); 
+    })
+    .then(userData => {
+      console.log("User data:", userData);
+       
+    })
+    .catch(error => {
+      console.error("Error fetching user:", error);
+    });
+}
+
+getGitHubUser("Ankit7rma");
+
+function displayUser(userData) {
+    document.getElementById("username").textcontent=userData.name;
+}
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <button onclick="fetchProduct()">Fetch Products</button>
+    <script>  
+        var productsData = [
+       {
+         id:10,
+         name:"Refrigirator",
+         price:45000.00,
+         rating:5,
+         color:"silver"
+    }
+       ,{
+         id:15,
+         name:"TV",
+         price:30000.00,
+         rating:4.5,
+         color:"Black"
+    }
+    ]
+        function fetchProduct()
+        {
+            setTimeout(function() {
+                var products = productsData;
+                var productsList = document.createElement('ul');
+                products.forEach(function(product) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = `${product.name} - $${product.price.tofixed(2)}`;
+                    productsList.appendchild(listitem);
+                });
+                document.body.appendchild(productsList);})
+        
+             }
+    </script>
+</body>
+</html>
